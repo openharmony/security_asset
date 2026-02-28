@@ -18,9 +18,8 @@
 use asset_common::{is_user_id_exist, CallingInfo, OwnerType, ROOT_USER_UPPERBOUND};
 use asset_definition::{
     macros_lib, Accessibility, AssetMap, AuthType, ConflictResolution, Conversion, ErrCode, OperationType, Result,
-    ReturnType, Tag, Value
+    ReturnType, Tag, Value, WrapType
 };
-use asset_sdk::WrapType;
 
 use crate::common::{CRITICAL_LABEL_ATTRS, NORMAL_LABEL_ATTRS, NORMAL_LOCAL_LABEL_ATTRS};
 
