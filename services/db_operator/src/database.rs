@@ -930,7 +930,7 @@ impl Database {
         self.restore_if_exec_fail(closure)
     }
 
-    /// Check whether data exists in the database without lock. 
+    /// Check whether data exists in the database without lock.
     #[inline(always)]
     pub fn is_data_exists_without_lock(&mut self, condition: &DbMap, is_filter_sync: bool) -> Result<bool> {
         let closure = |e: &Table| e.is_data_exists(condition, is_filter_sync);
